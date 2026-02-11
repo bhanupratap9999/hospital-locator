@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="style/main1.css">
+</head>
+<body>
+  <h2>Contact Us</h2>
+  <img src="assets/contact.jpg" alt="Contact Us" class="slide-img">
+
+  <form action="backend/contact-handler.php" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required><br>
+    <input type="email" name="email" placeholder="Email" required><br>
+    <textarea name="message" placeholder="Message" required></textarea><br>
+    <button type="submit">Send</button>
+  </form>
+</body>
+</html>

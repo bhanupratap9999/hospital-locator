@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hospital List</title>
+  <link rel="stylesheet" href="style/main3.css">
+</head>
+<body>
+  <h2>Nearby Hospitals</h2>
+  <img src="assets/hospital-list.jpg" alt="Hospital List" class="zoom-img">
+
+  <ul id="hospital-list"></ul>
+
+  <script>
+    fetch('data/hospitals.json')
+      .then(res => res.json())
+      .then(data => {
+        const list = document.getElementById('hospital-list');
+        data.forEach(h => {
+          const li = document.createElement('li');
+          li.innerHTML = `<strong>${h.name}</strong> – ${h.status}`;
+          list.appendChild(li);
+        });
+      });
+  </script>
+</body>
+</html>

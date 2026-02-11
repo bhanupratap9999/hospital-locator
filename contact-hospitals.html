@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Hospitals</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f1f8e9;
+      padding: 20px;
+    }
+
+    h2 {
+      text-align: center;
+      color: #2e7d32;
+    }
+
+    .hospital-card {
+      background: white;
+      border: 2px solid #aed581;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 15px auto;
+      max-width: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      animation: fadeIn 0.8s ease-in;
+    }
+
+    .hospital-card h3 {
+      color: #33691e;
+    }
+
+    .hospital-card p {
+      margin: 6px 0;
+      line-height: 1.5;
+    }
+
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translateY(30px);}
+      to {opacity: 1; transform: translateY(0);}
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Available Hospitals & Contact Info</h2>
+<script>
+    function showDetails(hospitalId) {
+        const details = document.getElementById(hospitalId);
+        details.style.display = details.style.display === 'none' ? 'block' : 'none';
+    }
+
+    function bookNow(hospitalName) {
+        alert(`${hospitalName} has been connected and will respond to you soon.`);
+    }
+</script>
+
+<div class="hospital-card" onclick="showDetails('hospital1-details')">
+    <img src="assets/1.jpg" alt="Hospital 1" style="width:100px; float:left; margin-right:15px;">
+    <h3>Sunrise Hospital</h3>
+    <div id="hospital1-details" style="display:none;">
+        <p><strong>Phone:</strong> +91 9988776655</p>
+        <p><strong>Medicines:</strong> Available</p>
+        <p><strong>Oxygen Cylinders:</strong> Available</p>
+        <p><strong>Ambulance:</strong> Yes</p>
+        <button onclick="bookNow('Sunrise Hospital')">Book Now</button>
+    </div>
+</div>
+
+<div class="hospital-card" onclick="showDetails('hospital2-details')">
+    <img src="assets/2.jpg" alt="Hospital 2" style="width:100px; float:left; margin-right:15px;">
+    <h3>Healing Touch Hospital</h3>
+    <div id="hospital2-details" style="display:none;">
+        <p><strong>Phone:</strong> +91 7766554433</p>
+        <p><strong>Medicines:</strong> Limited</p>
+        <p><strong>Oxygen Cylinders:</strong> Out of stock</p>
+        <p><strong>Ambulance:</strong> No</p>
+        <button onclick="bookNow('Healing Touch Hospital')">Book Now</button>
+    </div>
+</div>
+
+<div class="hospital-card" onclick="showDetails('hospital3-details')">
+    <img src="assets/3.jpg" alt="Hospital 3" style="width:100px; float:left; margin-right:15px;">
+    <h3>City Care Hospital</h3>
+    <div id="hospital3-details" style="display:none;">
+        <p><strong>Phone:</strong> +91 9876543210</p>
+        <p><strong>Medicines:</strong> Available</p>
+        <p><strong>Oxygen Cylinders:</strong> Available</p>
+        <p><strong>Ambulance:</strong> Yes</p>
+        <button onclick="bookNow('City Care Hospital')">Book Now</button>
+    </div>
+</div>
+
+<div class="hospital-card" onclick="showDetails('hospital4-details')">
+    <img src="assets/4.jpg" alt="Hospital 4" style="width:100px; float:left; margin-right:15px;">
+    <h3>Green Life Hospital</h3>
+    <div id="hospital4-details" style="display:none;">
+        <p><strong>Phone:</strong> +91 9123456780</p>
+        <p><strong>Medicines:</strong> Limited</p>
+        <p><strong>Oxygen Cylinders:</strong> Out of stock</p>
+        <p><strong>Ambulance:</strong> No</p>
+        <button onclick="bookNow('Green Life Hospital')">Book Now</button>
+    </div>
+</div>
+
+<div class="hospital-card" onclick="showDetails('hospital5-details')">
+    <img src="assets/5.jpg" alt="Hospital 5" style="width:100px; float:left; margin-right:15px;">
+    <h3>Hope Health Center</h3>
+    <div id="hospital5-details" style="display:none;">
+        <p><strong>Phone:</strong> +91 8899776655</p>
+        <p><strong>Medicines:</strong> Available</p>
+        <p><strong>Oxygen Cylinders:</strong> Available</p>
+        <p><strong>Ambulance:</strong> Yes</p>
+        <button onclick="bookNow('Hope Health Center')">Book Now</button>
+    </div>
+</div>
+
+<!-- Add 18 more hospitals -->
+<div class="hospital-card" onclick="showDetails('hospital6-details')">
+    <img src="assets/6.jpg" alt="Hospital 6" style="width:100px; float:left; margin-right:15px;">
+    <h3>Care Plus Hospital</h3>
+    <div id="hospital6-details" style="display:none;">
+        <p><strong>Phone:</strong> +91 9988223344</p>
+        <p><strong>Medicines:</strong> Available</p>
+        <p><strong>Oxygen Cylinders:</strong> Limited</p>
+        <p><strong>Ambulance:</strong> Yes</p>
+        <button onclick="bookNow('Care Plus Hospital')">Book Now</button>
+    </div>
+</div>
+
+<div class="hospital-card" onclick="showDetails('hospital7-details')">
+    <img src="assets/7.jpg" alt="Hospital 7" style="width:100px; float:left; margin-right:15px;">
+    <h3>LifeSpring Hospital</h3>
+    <div id="hospital7-details" style="display:none;">
+        <p><strong>Phone:</strong> +91 7766558899</p>
+        <p><strong>Medicines:</strong> Limited</p>
+        <p><strong>Oxygen Cylinders:</strong> Available</p>
+        <p><strong>Ambulance:</strong> No</p>
+        <button onclick="bookNow('LifeSpring Hospital')">Book Now</button>
+    </div>
+</div>
+
+<div class="hospital-card" onclick="showDetails('hospital8-details')">
+    <img src="assets/8.jpg" alt="Hospital 8" style="width:100px; float:left; margin-right:15px;">
+    <h3>Wellness Hospital</h3>
+    <div id="hospital8-details" style="display:none;">
+        <p><strong>Phone:</strong> +91 6655443322</p>
+        <p><strong>Medicines:</strong> Available</p>
+        <p><strong>Oxygen Cylinders:</strong> Out of stock</p>
+        <p><strong>Ambulance:</strong> Yes</p>
+        <button onclick="bookNow('Wellness Hospital')">Book Now</button>
+    </div>
+</div>
+
+<div class="hospital-card" onclick="showDetails('hospital9-details')">
+    <img src="assets/11.jpg" alt="Hospital 9" style="width:100px; float:left; margin-right:15px;">
+    <h3>Bright Future Hospital</h3>
+    <div id="hospital9-details" style="display:none;">
+        <p><strong>Phone:</strong> +91 9988771122</p>
+        <p><strong>Medicines:</strong> Available</p>
+        <p><strong>Oxygen Cylinders:</strong> Limited</p>
+        <p><strong>Ambulance:</strong> Yes</p>
+        <button onclick="bookNow('Bright Future Hospital')">Book Now</button>
+    </div>
+</div>
+
+<div class="hospital-card" onclick="showDetails('hospital10-details')">
+    <img src="assets/10.jpg" alt="Hospital 10" style="width:100px; float:left; margin-right:15px;">
+    <h3>Healthy Life Hospital</h3>
+    <div id="hospital10-details" style="display:none;">
+        <p><strong>Phone:</strong> +91 7766552211</p>
+        <p><strong>Medicines:</strong> Limited</p>
+        <p><strong>Oxygen Cylinders:</strong> Out of stock</p>
+        <p><strong>Ambulance:</strong> No</p>
+        <button onclick="bookNow('Healthy Life Hospital')">Book Now</button>
+    </div>
+</div>
+  
+</body>
+</html>
