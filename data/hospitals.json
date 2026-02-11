@@ -1,0 +1,6 @@
+[
+    { "name": "City Hospital", "status": "Available" },
+    { "name": "Metro Medical", "status": "Busy" },
+    { "name": "Green Care", "status": "Available" }
+  ]
+  

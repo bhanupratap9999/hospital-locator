@@ -1,0 +1,150 @@
+/* Base Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #bbdefb, #e3f2fd);
+    color: #333;
+    padding: 40px;
+    min-height: 100vh;
+    text-align: center;
+  }
+  
+  /* Heading Styling */
+  h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+    color: #0d47a1;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+  }
+  
+  /* Map Container */
+  div {
+    width: 100%;
+    height: 400px;
+    background-color: #f1f1f1;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Placeholder Text for Map */
+  div p {
+    color: #0d47a1;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 150px 0;
+    animation: fadeIn 1s ease-in-out;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideUp 1s ease forwards;
+  }
+  
+  /* Animation for Placeholder Text */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Map Hover Effect */
+  div:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.03);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  /* Add some space around the page */
+  body {
+    padding: 50px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media screen and (max-width: 768px) {
+    div {
+      height: 300px;
+    }
+    h2 {
+      font-size: 26px;
+    }
+  }
+  /* Universal Image Style */
+img {
+    max-width: 250px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    opacity: 0;
+    transform: scale(0.9);
+    animation-fill-mode: forwards;
+  }
+  
+  /* Fade-in Animation */
+  .fade-img {
+    animation: fadeIn 1.5s ease-in-out forwards;
+  }
+  
+  /* Slide-in Animation */
+  .slide-img {
+    animation: slideIn 1.5s ease-in-out forwards;
+  }
+  
+  /* Zoom Animation */
+  .zoom-img {
+    animation: zoomIn 1.5s ease-in-out forwards;
+  }
+  
+  /* Keyframes */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes zoomIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+
+
+  #map {
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  }
+  .btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #0d47a1;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  .btn:hover {
+    background-color: #1976d2;
+  }
+  
+  
